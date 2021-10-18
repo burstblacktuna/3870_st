@@ -1,5 +1,4 @@
 package school;
-
 import java.util.Arrays;
 import static java.lang.System.*;
 
