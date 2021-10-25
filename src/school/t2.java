@@ -1,7 +1,6 @@
 package school;
 import java.util.Arrays;
 import java.util.Scanner;
-
 import static java.lang.System.*;
 
 public class t2 {
@@ -15,7 +14,7 @@ public class t2 {
         }
 
         if (x % 2 == 0) {
-            out.println("整數");
+            out.println("偶數");
         } else {
             out.println("奇數");
         }
