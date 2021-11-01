@@ -1,7 +1,5 @@
 package school;
-
 import static java.lang.System.*;
-
 public class t4 {
     public static void main(String[] args) {
         double s = 3500;
@@ -14,16 +12,13 @@ public class t4 {
             }
         }
         out.println();
-
         int sum = 0;
         for (int i = 1; i <= 100; i++) {
             sum = (int) (sum + Math.pow(i, 2));
 
         }
         out.println("1到100平方總和:" + sum);
-
         out.println();
-
         double sum1 = 0;
         for (int i = 1; i <= 100; i++) {
             if (i % 16 == 0) {
@@ -39,14 +34,12 @@ public class t4 {
             }
             out.println();
         }
-        out.println();
 
+
+        out.println();
         for (double i = 1; i <= 10; i++) {
             sum1 = sum1 + 1 / i;
-
-
         }
         out.println(sum1);
-
     }
 }
