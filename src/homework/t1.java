@@ -1,4 +1,4 @@
-package school;
+package homework;
 import static java.lang.System.*;
 
 public class t1 {

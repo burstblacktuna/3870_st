@@ -1,4 +1,4 @@
-package school;
+package homework;
 import java.util.Scanner;
 import static java.lang.System.*;
 

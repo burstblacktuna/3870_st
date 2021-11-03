@@ -1,7 +1,5 @@
-package school;
-
+package homework;
 import static java.lang.System.*;
-
 public class t4 {
     public static void main(String[] args) {
         double l = 3500;//長度為3500
@@ -20,5 +18,6 @@ public class t4 {
             sum =sum + i*i;//1²+2²+3+...100²
         }
         out.println("1到100平方總和:" + sum);
+
     }
 }

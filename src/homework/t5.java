@@ -1,4 +1,4 @@
-package school;
+package homework;
 import static java.lang.System.*;
 
 public class t5 {
@@ -7,8 +7,9 @@ public class t5 {
         {
             for (int w = 1; w <= i; w++)//i每執行一次，w多印一次
             {
-                out.println(w);
+                out.print(w);
             }
+            out.println();
         }
     }
 }
