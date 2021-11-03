@@ -4,49 +4,21 @@ import static java.lang.System.*;
 
 public class t4 {
     public static void main(String[] args) {
-        double s = 3500;
-        for (int d = 1; true; d++) {
-            s = s / 2;
-            out.println(s);
-            if (s < 3) {
-                out.println("天數:" + d);
+        double l = 3500;//長度為3500
+        for (int day = 1; true; day++) {
+            l = l / 2;//每天減半
+            out.println(l);
+            if (l < 3) {//長度小於3就停止
+                out.println("天數:" + day);//印出第幾天
                 break;
             }
         }
         out.println();
 
-        int sum = 0;
+        int sum = 0;//總和
         for (int i = 1; i <= 100; i++) {
-            sum = (int) (sum + Math.pow(i, 2));
-
+            sum =sum + i*i;//1²+2²+3+...100²
         }
         out.println("1到100平方總和:" + sum);
-
-        out.println();
-
-        double sum1 = 0;
-        for (int i = 1; i <= 100; i++) {
-            if (i % 16 == 0) {
-                out.println(i);
-            }
-        }
-        out.println();
-
-
-        for (int i = 0; i <= 5; i++) {
-            for (int w = 1; w <= i; w++) {
-                out.print(w);
-            }
-            out.println();
-        }
-        out.println();
-
-        for (double i = 1; i <= 10; i++) {
-            sum1 = sum1 + 1 / i;
-
-
-        }
-        out.println(sum1);
-
     }
 }

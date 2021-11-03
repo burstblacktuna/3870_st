@@ -7,5 +7,6 @@ public class test3 {
         int x = 1;
         char y ='1';
         System.out.println(x+y);
+        // =50
     }
 }
