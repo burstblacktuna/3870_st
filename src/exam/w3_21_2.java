@@ -11,12 +11,12 @@ public class w3_21_2 {
             var a = new Scanner(in);
             out.println("INPUT:");
             int x = a.nextInt();
-            out.print(sum);
-            sum=sum+x;
             if (x == 0) {
                 out.print("end");
                 break;
             }
+            out.print(sum);
+            sum=sum+x;
             out.println("+"+x+"="+sum);
         }
     }
