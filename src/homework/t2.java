@@ -8,6 +8,6 @@ public class t2 {
         Scanner a = new Scanner(in);
         int x = a.nextInt();//輸入1200
         int y = a.nextInt();//輸入2100
-        out.println(x + y);
+        out.println(x + y );
     }
 }

@@ -11,7 +11,6 @@ public class t3 {
             out.println(x);//正整數則輸出不變
         else
             out.println(-x);//負整數則輸出為負
-
         if (x % 2 == 0)
             out.println("偶數");//除以2餘數為0
          else
