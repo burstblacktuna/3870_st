@@ -16,7 +16,7 @@ public class test2 {
         out.println("總");
         int t =0;
         for (int i = 0; i < time; i++) {
-            t= t +score[i];
+            t+=score[i];
             out.println(score[i]+" ");
 
         }

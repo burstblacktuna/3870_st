@@ -1,7 +1,7 @@
 import java.util.Scanner;
 import static java.lang.System.*;
 
-public class test {
+public class test1 {
     public static void main(String[] args) {
         while (true) {
             var a = new Scanner(in);

@@ -15,7 +15,7 @@ public class t4 {
 
         int sum = 0;//總和
         for (int i = 1; i <= 100; i++) {
-            sum =sum + i*i;//1²+2²+3+...100²
+            sum += i*i;//1²+2²+3+...100²
         }
         out.println("1到100平方總和:" + sum);
 

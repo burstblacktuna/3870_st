@@ -1,6 +1,6 @@
 package exam;
 
-public class w5_10 {
+public class e4 {
 
     public static void main(String[] args) {
         for (int i = 1; i <= 4; i++) {

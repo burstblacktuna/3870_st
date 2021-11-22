@@ -3,7 +3,7 @@ package exam;
 import java.util.Scanner;
 import static java.lang.System.*;
 
-public class w3_21_2 {
+public class e5 {
 
     public static void main(String[] args) {
         int sum=0;
@@ -16,7 +16,7 @@ public class w3_21_2 {
                 break;
             }
             out.print(sum);
-            sum=sum+x;
+            sum+=x;
             out.println("+"+x+"="+sum);
         }
     }

@@ -1,8 +1,6 @@
-package school;
-
 import static java.lang.System.*;
 
-public class Main {
+public class test5 {
 
     public static void main(String[] args) {
         char ch1 = '\u0041';
@@ -11,7 +9,6 @@ public class Main {
         for (int i=1;i>0;i--) {
             out.println(i);
         }
-
         // 建立含有 10 個整數的陣列
         int[] a = new int[10];
         // 初始化陣列元素

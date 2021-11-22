@@ -3,7 +3,7 @@ package exam;
 import java.util.Scanner;
 import static java.lang.System.*;
 
-public class w3_21 {
+public class e2 {
 
     public static void main(String[] args) {
         var scn = new Scanner(in);

@@ -4,7 +4,7 @@ import static java.lang.System.*;
 
 public class t6 {
     public static void main(String[] args) {
-        int[] array = {3, 5, -1, 3, 2, 4, 1, 6, 99, 5, 4, 3, 2};
+        int[] array = {3, 5, 1, 3, 2, 4, 1, 6, 8, 5, 4, 3, 2};
         out.println("(a):" + array.length);
         int count = 0;
         for (int j : array) {
