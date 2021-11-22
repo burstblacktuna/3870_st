@@ -1,11 +1,9 @@
 import static java.lang.System.*;
 
 public class t5 {
-
     public static void main(String[] args) {
         char ch1 = '\u0041';
         out.println("ch1:" + ch1);
-
         for (int i=1;i>0;i--) {
             out.println(i);
         }
@@ -20,6 +18,5 @@ public class t5 {
         for (int i : a) {
             out.println(i);
         }
-
     }
 }
