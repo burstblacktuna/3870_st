@@ -16,7 +16,6 @@ public class h7 {
             }
         }
         out.println("");
-        int S = 140;
         out.print("0");
         for (int i = 1; i <= 140; i++) {
             if (140 % i == 0) {
