@@ -1,6 +1,6 @@
 package homework;
 import static java.lang.System.*;
-public class t4 {
+public class h4 {
     public static void main(String[] args) {
         double l = 3500;//長度為3500
         for (int day = 1; true; day++) {

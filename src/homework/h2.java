@@ -2,7 +2,7 @@ package homework;
 import java.util.Scanner;
 import static java.lang.System.*;
 
-public class t2 {
+public class h2 {
     public static void main(String[] args) {
         //輸入1200與2100相加，輸出3300
         Scanner a = new Scanner(in);

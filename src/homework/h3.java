@@ -2,7 +2,7 @@ package homework;
 import java.util.Scanner;
 import static java.lang.System.*;
 
-public class t3 {
+public class h3 {
     public static void main(String[] args) {
         //輸入整數，輸出絕對值與判斷奇偶數
         var a = new Scanner(in);

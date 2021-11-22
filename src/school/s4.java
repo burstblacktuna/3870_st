@@ -2,7 +2,7 @@ package school;
 import java.util.Scanner;
 import static java.lang.System.*;
 
-public class t9 {
+public class s4 {
     public static void main(String[] args) {
         var scn = new Scanner(in);
         int input, i, pw = 6128;
