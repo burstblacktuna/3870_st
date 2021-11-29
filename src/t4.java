@@ -9,7 +9,7 @@ public class t4 {
                 {42, 43, 44, 45, 46}};
         String[] n = {"壹", "貳", "參", "肆", "伍", "SUM", "AVG", "MAX", "MIN"};
         String[] s = {"En", "Ch", "Mh"};
-        int sum ;
+        int sum;
         for (String i : n) {
             out.print("\t" + i);
         }
@@ -23,7 +23,7 @@ public class t4 {
                 sum += a[i][j];
                 if (a[i][j] > MAX) MAX = a[i][j];
                 if (a[i][j] > MIN) MAX = a[i][j];
-                if( j == (a[i].length-1) ) out.print(a[i][j] + "\t");
+                if (j == a[i].length - 1) out.print(a[i][j] + "\t");
                 else out.print(a[i][j] + ",\t");
             }
             out.print(sum + "\t" + sum / a[i].length + "\t" + MAX + "\t" + MIN + "\n");
