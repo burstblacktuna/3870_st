@@ -21,7 +21,6 @@ public class h7 {
         out.println("");
 
         /*第二題*/
-        out.print("0");//0為任何數的因數
         int S=140;
         for (int i = 1; i <= S; i++)
         {
