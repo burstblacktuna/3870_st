@@ -12,7 +12,7 @@ public class h8_1 {
                 {20.6, 21.5, 18.4, 15.7}};
         String[] w = {"星期一", "星期二", "星期三", "星期四", "平均氣溫"};
         String[] t = {"時段一", "時段二", "時段三"};
-        DecimalFormat df = new DecimalFormat("#.###");//控制小數點顯示位
+        DecimalFormat df = new DecimalFormat("#.0");//控制小數點顯示位
         double sum;
         out.print("\t\t");
         for (String i : w) {
@@ -26,7 +26,7 @@ public class h8_1 {
                 sum += a[i][j];
                 out.print(a[i][j] + "\t");
             }
-            out.print(sum / a[i].length + "\t\n");
+            out.print(df.format(sum / a[i].length) + "\t\n");
         }
         out.print("日平均溫度");
         double[] daysum = {0, 0, 0, 0};
@@ -35,12 +35,10 @@ public class h8_1 {
                 daysum[j] += i[j];//依序將每天的時段1~3先加總
             }
         }
-        for (int k = 0; k < daysum.length; k++) {
-            if (k == daysum.length - 1)
-                System.out.print("\t\t" + df.format(daysum[k] / a.length));
-            else
-                System.out.print("\t" + df.format(daysum[k] / a.length));
+        for (double v : daysum) {
+            System.out.print("\t" + df.format(v / a.length));
         }
+        out.print("\t單位(°C)");
         String maxday = null, minday = null;
         String maxtime = null, mintime = null;
         double mintemp = Double.MAX_VALUE;//取預設最高值
