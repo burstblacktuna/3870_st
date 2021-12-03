@@ -14,12 +14,13 @@ public class h8_2 {
         int[] price = {12, 16, 10, 14, 15};
         String[] salesman = {"1", "2", "3"};
         var comma = new DecimalFormat(",###");
+        //印出第一排
         out.print("銷售員");
         for (String i : product) {
             out.print("\t" + i);
         }
         out.print("\t總額\n");
-
+        //
         String maxman = null;
         int max1 = 0;
         for (int i = 0; i < amount.length;
@@ -36,6 +37,7 @@ public class h8_2 {
             }
             out.print(comma.format(sum) + "\t\n");
         }
+        //
         String maxproduct = null;
         int max2 = 0;
         int[] productsum = {0, 0, 0, 0, 0};
@@ -49,7 +51,8 @@ public class h8_2 {
                 }
             }
         }
-        for (int i : productsum) out.print("\t" + comma.format(i));//
+        for (int i : productsum) out.print("\t" + comma.format(i));
+        //
         out.print("\t單位(元)");
         out.println("\n業績最好銷售員為:" + maxman);
         out.println("銷售最好產品為:" + maxproduct);
