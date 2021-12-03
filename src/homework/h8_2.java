@@ -11,7 +11,7 @@ public class h8_2 {
                 {77, 33, 68, 45, 23},
                 {43, 55, 43, 67, 65}};
         String[] product = {"產品A", "產品B", "產品C", "產品D", "產品E"};
-        int[] price = {12,16,10,14,15};
+        int[] price = {12, 16, 10, 14, 15};
         String[] salesman = {"1", "2", "3"};
         var comma = new DecimalFormat(",###");
         out.print("銷售員");
@@ -27,7 +27,7 @@ public class h8_2 {
             int sum = 0;
             out.print(salesman[i] + "\t\t");
             for (int j = 0; j < amount[i].length; j++) {
-                sum += amount[i][j]*price[j];
+                sum += amount[i][j] * price[j];
                 out.print(amount[i][j] + "\t\t");
             }
             if (sum > max1) {
