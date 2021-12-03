@@ -12,7 +12,7 @@ public class h8_1 {
                 {20.6, 21.5, 18.4, 15.7}};
         String[] w = {"星期一", "星期二", "星期三", "星期四", "平均氣溫"};
         String[] t = {"時段一", "時段二", "時段三"};
-        DecimalFormat df = new DecimalFormat("#.0");//控制小數點顯示位
+        var df = new DecimalFormat("#.0");//控制小數點顯示位
         double sum;
         out.print("\t\t");
         for (String i : w) {

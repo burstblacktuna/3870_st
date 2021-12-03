@@ -14,7 +14,7 @@ public class h8_2 {
         String[] p = {"產品A", "產品B", "產品C", "產品D", "產品E"};
         int[] pp = {12,16,10,14,15};
         String[] y = {"1", "2", "3"};
-        DecimalFormat df = new DecimalFormat(",###");
+        var df = new DecimalFormat(",###");
         out.print("銷售員");
         for (String i : p) {
             out.print("\t" + i);
