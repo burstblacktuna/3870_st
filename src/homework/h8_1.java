@@ -6,54 +6,54 @@ import static java.lang.System.*;
 
 public class h8_1 {
     public static void main(String[] args) {
-        double[][] a = {
+        double[][] temp = {
                 {18.2, 17.3, 15.0, 13.4},
                 {23.8, 25.1, 20.6, 17.8},
                 {20.6, 21.5, 18.4, 15.7}};
-        String[] w = {"星期一", "星期二", "星期三", "星期四", "平均氣溫"};
-        String[] t = {"時段一", "時段二", "時段三"};
-        var df = new DecimalFormat("#.0");//控制小數點顯示位
+        String[] week = {"星期一", "星期二", "星期三", "星期四", "平均氣溫"};
+        String[] time = {"時段一", "時段二", "時段三"};
+        var point = new DecimalFormat("#.0");//控制小數點顯示位
         double sum;
         out.print("\t\t");
-        for (String i : w) {
+        for (String i : week) {
             out.print("\t" + i);
         }
         out.println();
-        for (int i = 0; i < a.length; i++) {
+        for (int i = 0; i < temp.length; i++) {
             sum = 0.0;
-            out.print(t[i] + "\t\t");
-            for (int j = 0; j < a[i].length; j++) {
-                sum += a[i][j];
-                out.print(a[i][j] + "\t");
+            out.print(time[i] + "\t\t");
+            for (int j = 0; j < temp[i].length; j++) {
+                sum += temp[i][j];
+                out.print(temp[i][j] + "\t");
             }
-            out.print(df.format(sum / a[i].length) + "\t\n");
+            out.print(point.format(sum / temp[i].length) + "\t\n");
         }
         out.print("日平均溫度");
-        double[] daysum = {0, 0, 0, 0};
-        for (double[] i : a) {
+        double[] daysum = {0, 0, 0, 0};//將星期個別的總和儲存為陣列
+        for (double[] i : temp) {
             for (int j = 0; j < i.length; j++) {
                 daysum[j] += i[j];//依序將每天的時段1~3先加總
             }
         }
         for (double v : daysum) {
-            System.out.print("\t" + df.format(v / a.length));
+            System.out.print("\t" + point.format(v / temp.length));
         }
         out.print("\t單位(°C)");
         String maxday = null, minday = null;
         String maxtime = null, mintime = null;
         double mintemp = Double.MAX_VALUE;//取預設最高值
         double maxtemp = Double.MIN_VALUE;//取預設最低值
-        for (int i = 0; i < a.length; i++) {
-            for (int j = 0; j < a[i].length; j++) {
-                if (a[i][j] > maxtemp) {
-                    maxtemp = a[i][j];
-                    maxday = w[j];
-                    maxtime = t[i];
+        for (int i = 0; i < temp.length; i++) {
+            for (int j = 0; j < temp[i].length; j++) {
+                if (temp[i][j] > maxtemp) {//找最高時間
+                    maxtemp = temp[i][j];
+                    maxday = week[j];
+                    maxtime = time[i];
                 }
-                if (a[i][j] < mintemp) {
-                    mintemp = a[i][j];
-                    minday = w[j];
-                    mintime = t[i];
+                if (temp[i][j] < mintemp) {//找最低時間
+                    mintemp = temp[i][j];
+                    minday = week[j];
+                    mintime = time[i];
                 }
             }
         }
