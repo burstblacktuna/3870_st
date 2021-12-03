@@ -2,8 +2,6 @@ package homework;
 
 import static java.lang.System.*;
 
-import java.util.Scanner;
-
 public class h8_2 {
     public static void main(String[] args) {
         int[][] a = {
@@ -18,6 +16,9 @@ public class h8_2 {
             out.print("\t" + i);
         }
         out.println();
+
+        String maxman = null;
+        int max1 = 0;
         for (int i = 0; i < a.length; i++) {
             sum = 0;
             out.print(y[i] + "\t\t");
@@ -25,30 +26,29 @@ public class h8_2 {
                 sum += a[i][j];
                 out.print(a[i][j] + "\t\t");
             }
+            if (sum > max1) {
+                max1 = sum;
+                maxman = y[i];
+            }
             out.print(sum + "\t\n");
         }
+        String maxproduct = null;
+        int max2 = 0;
         int[] psum = {0, 0, 0, 0, 0};
         out.print("總額");
-        for (int[] i : a) {
-            for (int j = 0; j < i.length; j++) {
-                psum[j] += i[j];
+        for (int i = 0; i < a.length; i++) {
+            for (int j = 0; j < a[i].length; j++) {
+                psum[j] += a[i][j];
+            }
+            if (psum[i] > max2) {
+                max2 = psum[i];
+                maxproduct = x[i];
             }
         }
         for (int i : psum) {
             out.print("\t" + i + "\t");
         }
-        int maxman = 0;
-        double max = Double.MIN_VALUE;//取預設最低值
-        for (int i = 0; i < a.length; i++) {
-            for (int j = 0; j < a[i].length; j++) {
-                double maxsum = a[i][j];
-                if (maxsum > max) {
-                    max = maxsum;
-                    maxman = j;
-                }
-            }
-        }
-        out.println("\n"+max);
-        out.print(maxman+1);
+        out.println("\n業績最好銷售員為:" + maxman);
+        out.println("銷售最好產品為:" + maxproduct);
     }
 }
