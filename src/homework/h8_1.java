@@ -1,6 +1,7 @@
 package homework;
 
 import java.text.DecimalFormat;
+
 import static java.lang.System.*;
 
 public class h8_1 {
@@ -39,33 +40,25 @@ public class h8_1 {
             if (k == daysum.length - 1) System.out.print("\t\t" + df.format(daysum[k] / a.length));
             else System.out.print("\t" + df.format(daysum[k] / a.length));
         }
-        int maxday = 0;
-        int maxtime = 0;
-        double max = Double.MIN_VALUE;//取預設最低值
+        String maxday= null, minday = null;
+        String maxtime = null,mintime = null;
+        double mintemp = Double.MAX_VALUE;//取預設最高值
+        double maxtemp = Double.MIN_VALUE;//取預設最低值
         for (int i = 0; i < a.length; i++) {
             for (int j = 0; j < a[i].length; j++) {
-                double maxsum = a[i][j];
-                if (maxsum > max) {
-                    max = maxsum;
-                    maxday = j;
-                    maxtime = i;
+                if (a[i][j] > maxtemp) {
+                    maxtemp = a[i][j];
+                    maxday = n[j];
+                    maxtime = s[i];
+                }
+                if (a[i][j] < mintemp) {
+                    mintemp = a[i][j];
+                    minday = n[j];
+                    mintime = s[i];
                 }
             }
         }
-        System.out.println("\n溫度最高為星期" + (maxday + 1) + ",時段" + (maxtime + 1));
-        int minday = 0;
-        int mintime = 0;
-        double min = Double.MAX_VALUE;//取預設最高值
-        for (int i = 0; i < a.length; i++) {
-            for (int j = 0; j < a[i].length; j++) {
-                double minsum = a[i][j];
-                if (minsum < min) {
-                    min = minsum;
-                    minday = j;
-                    mintime = i;
-                }
-            }
-        }
-        System.out.println("溫度最低為星期" + (minday + 1) + ",時段" + (mintime + 1));
+        System.out.println("\n溫度最高為" + maxday + " " + maxtime);
+        System.out.println("溫度最低為" + minday + " " + mintime);
     }
 }
