@@ -36,12 +36,13 @@ public class h8_1 {
             }
         }
         for (int k = 0; k < daysum.length; k++) {
-            String.format("%.2f", daysum[k] / a.length);
-            if (k == daysum.length - 1) System.out.print("\t\t" + df.format(daysum[k] / a.length));
-            else System.out.print("\t" + df.format(daysum[k] / a.length));
+            if (k == daysum.length - 1)
+                System.out.print("\t\t" + df.format(daysum[k] / a.length));
+            else
+                System.out.print("\t" + df.format(daysum[k] / a.length));
         }
-        String maxday= null, minday = null;
-        String maxtime = null,mintime = null;
+        String maxday = null, minday = null;
+        String maxtime = null, mintime = null;
         double mintemp = Double.MAX_VALUE;//取預設最高值
         double maxtemp = Double.MIN_VALUE;//取預設最低值
         for (int i = 0; i < a.length; i++) {
