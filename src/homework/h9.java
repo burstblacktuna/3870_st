@@ -1,9 +1,10 @@
-package school;
+package homework;
 
 import static java.lang.System.*;
 
-public class s5 {
+public class h9 {
     public static void main(String[] args) {
+
 
     }
 }
