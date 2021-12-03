@@ -38,18 +38,18 @@ public class h8_2 {
         }
         String maxproduct = null;
         int max2 = 0;
-        int[] psum = {0, 0, 0, 0, 0};
+        int[] productsum = {0, 0, 0, 0, 0};
         out.print("總額");
         for (int[] i : amount) {
             for (int j = 0; j < i.length; j++) {
-                psum[j] += i[j] * price[j];
-                if (psum[j] > max2) {
-                    max2 = psum[j];
+                productsum[j] += i[j] * price[j];
+                if (productsum[j] > max2) {
+                    max2 = productsum[j];
                     maxproduct = product[j];
                 }
             }
         }
-        for (int i : psum) out.print("\t" + comma.format(i));//
+        for (int i : productsum) out.print("\t" + comma.format(i));//
         out.print("\t單位(元)");
         out.println("\n業績最好銷售員為:" + maxman);
         out.println("銷售最好產品為:" + maxproduct);
