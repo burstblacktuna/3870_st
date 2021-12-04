@@ -32,13 +32,14 @@ public class h8_1 {
         //
         out.print("日平均溫度");
         double[] daysum = {0, 0, 0, 0};//將星期個別的總和儲存為陣列
-        for (double[] i : temp) {
-            for (int j = 0; j < i.length; j++) {
-                daysum[j] += i[j];//依序將每天的時段1~3先加總
+        for (int i = 0; i < temp.length; i++) {
+            for (int j = 0; j < temp[i].length; j++) {
+                daysum[j] += temp[i][j];//依序將每天的時段1~3先加總
             }
         }
-        for (double v : daysum) {
-            out.print("\t" + point.format(v / temp.length));
+        //此時 daysum = {62.6, 63.9, 54.0, 46.9}
+        for (int i = 0; i < daysum.length; i++) {
+            out.print("\t" + point.format(daysum[i] / temp.length));
         }
         out.print("\t單位(°C)");
         //
