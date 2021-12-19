@@ -3,7 +3,7 @@ package homework;
 import java.util.Scanner;
 import static java.lang.System.*;
 
-public class h9 {
+public class h09 {
     public static void main(String[] args) {
         var add = new Scanner(in);
         for (int i =0;i<2;i++){

@@ -2,7 +2,7 @@ package homework;
 
 import static java.lang.System.*;
 
-public class h7 {
+public class h07 {
     public static void main(String[] args) {
         /*第一題*/
         int[] A = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};

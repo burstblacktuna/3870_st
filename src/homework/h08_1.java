@@ -4,7 +4,7 @@ import java.text.DecimalFormat;
 
 import static java.lang.System.*;
 
-public class h8_1 {
+public class h08_1 {
     public static void main(String[] args) {
         double[][] temp = {
                 {18.2, 17.3, 15.0, 13.4},

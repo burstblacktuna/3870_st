@@ -1,7 +1,7 @@
 package homework;
 import static java.lang.System.*;
 
-public class h1 {
+public class h01 {
     public static void main(String[] args) {
         //十六進位的unicode
         char ch1 = '\u0042';

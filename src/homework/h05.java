@@ -2,7 +2,7 @@ package homework;
 
 import static java.lang.System.*;
 
-public class h5 {
+public class h05 {
     public static void main(String[] args) {
         for (int i = 0; i <= 5; i++)//縱軸印出5次
         {

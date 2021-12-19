@@ -2,7 +2,7 @@ package homework;
 
 import static java.lang.System.*;
 
-public class h6 {
+public class h06 {
     public static void main(String[] args) {
         int[] array = {3, 5, 1, 3, 2, 4, 1, 6, 8, 5, 4, 3, 2};
         out.println("(a):" + array.length);

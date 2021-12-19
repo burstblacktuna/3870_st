@@ -4,7 +4,7 @@ import java.text.DecimalFormat;
 
 import static java.lang.System.*;
 
-public class h8_2 {
+public class h08_2 {
     public static void main(String[] args) {
         int[][] amount = {
                 {33, 32, 56, 45, 33},
