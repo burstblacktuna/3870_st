@@ -41,7 +41,7 @@ public class h8_2 {
         String maxproduct = null;
         int max2 = 0;
         int[] productsum = {0, 0, 0, 0, 0};
-        out.print("總額\t");
+        out.print("總額");
         for (int[] i : amount) {
             for (int j = 0; j < i.length; j++) {
                 productsum[j] += i[j] * price[j];
