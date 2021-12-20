@@ -4,7 +4,7 @@ import java.text.DecimalFormat;
 
 import static java.lang.System.*;
 
-public class s8 {
+public class s05 {
     /*------------------------------------------------------------*/
     public static void arr(String[] a) {
         for (String i : a) {

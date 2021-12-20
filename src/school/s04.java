@@ -2,9 +2,7 @@ package school;
 
 import java.util.Scanner;
 
-import static java.lang.System.*;
-
-public class s5 {
+public class s04 {
     public static void main(String[] args) {
         int[][][] z = {
                 {{3, 3, 3}, {3, 3, 3}},
