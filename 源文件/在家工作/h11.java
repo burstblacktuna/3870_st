@@ -5,7 +5,7 @@ import static java.lang.System.*;
 public class h11 {
     public static void main(String[] args) {
         out.println("CCalculator；");
-        CCalculator.set_value(23, 4, 7);
+        CCalculator.set_value(25, 3, 7);
         CCalculator.show();
         CCalculator.add();
         CCalculator.sub();
