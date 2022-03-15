@@ -1,6 +1,6 @@
 import static java.lang.System.*;
 
-public class t5 {
+public class t05 {
     public static void main(String[] args) {
         char ch1 = '\u0041';
         out.println("ch1:" + ch1);

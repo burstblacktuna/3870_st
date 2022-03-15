@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 import static java.lang.System.*;
 
-public class t2 {
+public class t02 {
     public static void main(String[] args) {
         Scanner a = new Scanner(in);
         out.print("輸入行數:");
