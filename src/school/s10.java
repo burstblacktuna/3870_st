@@ -39,7 +39,6 @@ public class s10 extends JFrame implements ActionListener {
         if (btn == btn1) c.setBackground(Color.yellow);
         else if (btn == btn2) c.setBackground(Color.red);
         else c.setBackground(Color.red);
-
     }
 }
 
