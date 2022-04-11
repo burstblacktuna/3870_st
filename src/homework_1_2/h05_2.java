@@ -3,8 +3,6 @@ package homework_1_2;
 import java.awt.*;
 import java.awt.event.*;
 import javax.swing.*;
-import javax.swing.event.CaretEvent;
-import javax.swing.event.CaretListener;
 
 public class h05_2 extends JFrame {
     static JTextArea t1, t2;

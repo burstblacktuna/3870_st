@@ -1,15 +1,15 @@
-package homework_1_2;
 
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
 
-public class h04 extends JFrame implements ActionListener {
-    static h04 frm;
+
+public class test1 extends JFrame implements ActionListener {
+    static test1 frm;
     JRadioButton btn1,btn2;
     Container c;
     ButtonGroup g;
-    public h04() {
+    public test1() {
         c=getContentPane();
         c.setLayout(new FlowLayout());
         g = new ButtonGroup();
@@ -23,7 +23,7 @@ public class h04 extends JFrame implements ActionListener {
         setVisible(true);
     }
     public static void main(String[] args) {
-        frm = new h04();
+        frm = new test1();
         frm.addWindowListener(new WindowAdapter() {//關閉視窗
             public void windowClosing(WindowEvent event) {
                 System.exit(0);}});
