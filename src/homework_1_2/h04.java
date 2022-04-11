@@ -7,18 +7,20 @@ import java.awt.event.ActionListener;
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
 
+import static java.awt.FlowLayout.LEFT;
+
 public class h04 extends JFrame implements ActionListener {
     static h04 frm;
     JRadioButton btn1,btn2;
     Container c;
-
+    ButtonGroup g;
     public h04() {
         c=getContentPane();
         c.setLayout(new FlowLayout());
+        g = new ButtonGroup();
         btn1 = new JRadioButton("YELLOW");
         btn2 = new JRadioButton("RED");
-        c.add(btn1);
-        c.add(btn2);
+        g.add(btn1);g.add(btn2);add(btn1);add(btn2);
         btn1.addActionListener(this);
         btn2.addActionListener(this);
         setTitle("EVENT");
@@ -35,11 +37,12 @@ public class h04 extends JFrame implements ActionListener {
         JRadioButton btn = (JRadioButton) e.getSource();
         if (btn == btn1) {
             c.setBackground(Color.yellow);
-            btn2.setSelected(false);
+            c.setLayout(new FlowLayout(LEFT));
         }
+
         else if (btn == btn2) {
             c.setBackground(Color.red);
-            btn1.setSelected(false);
+            c.setLayout(new FlowLayout(FlowLayout.RIGHT));
         }
         else c.setBackground(Color.red);
     }

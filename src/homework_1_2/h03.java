@@ -15,7 +15,6 @@ public class h03 extends Frame implements ActionListener {
         frm.setSize(300, 300);
         frm.add(btn);
         frm.setVisible(true);
-
         frm.addWindowListener(new WindowAdapter() {//關閉視窗
             public void windowClosing(WindowEvent event) {
                 System.exit(0);
@@ -25,6 +24,7 @@ public class h03 extends Frame implements ActionListener {
     public void actionPerformed(ActionEvent e) {
         if (c == 0) {
             frm.setBackground(Color.white);
+            frm.setLayout(new FlowLayout(FlowLayout.LEFT));
             frm.setTitle("background=white");
             c = 1;
         }
