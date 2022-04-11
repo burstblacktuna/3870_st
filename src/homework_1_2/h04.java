@@ -7,8 +7,6 @@ import java.awt.event.ActionListener;
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
 
-import static java.awt.FlowLayout.LEFT;
-
 public class h04 extends JFrame implements ActionListener {
     static h04 frm;
     JRadioButton btn1,btn2;
@@ -35,15 +33,8 @@ public class h04 extends JFrame implements ActionListener {
     }
     public void actionPerformed(ActionEvent e) {
         JRadioButton btn = (JRadioButton) e.getSource();
-        if (btn == btn1) {
-            c.setBackground(Color.yellow);
-            c.setLayout(new FlowLayout(LEFT));
-        }
-
-        else if (btn == btn2) {
-            c.setBackground(Color.red);
-            c.setLayout(new FlowLayout(FlowLayout.RIGHT));
-        }
+        if (btn == btn1) c.setBackground(Color.yellow);
+        else if (btn == btn2) c.setBackground(Color.red);
         else c.setBackground(Color.red);
     }
 }
