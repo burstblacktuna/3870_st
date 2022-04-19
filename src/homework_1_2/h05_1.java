@@ -5,14 +5,15 @@ import java.awt.event.*;
 import javax.swing.*;
 import static java.awt.FlowLayout.*;
 
+
 public class h05_1 extends JFrame {
     static JCheckBox l, c, r;
     static ButtonGroup g;
     static h05_1 f= new h05_1();
 
     public static void main(String[] args) {
-        g = new ButtonGroup();
         f.setLayout(new FlowLayout());
+        g = new ButtonGroup();
         l = new JCheckBox("Left");
         c = new JCheckBox("Center");
         r = new JCheckBox("Right");
