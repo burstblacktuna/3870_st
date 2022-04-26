@@ -19,21 +19,12 @@ public class e2 extends JFrame {
         r.addActionListener(listener);
         f.setSize(600, 450);
         f.setVisible(true);
-        f.addWindowListener(new WindowAdapter() {//關閉視窗
-            public void windowClosing(WindowEvent event) {
-                System.exit(0);
-            }
-        });
     }
     static ActionListener listener = new ActionListener() {
         public void actionPerformed(ActionEvent e) {
             JButton btn = (JButton) e.getSource();
-            if (btn==l) {
-                f.setLayout(new FlowLayout(LEFT));
-            }
-            else if(btn==r){
-                f.setLayout(new FlowLayout(RIGHT));
-            }
+            if (btn==l) {f.setLayout(new FlowLayout(LEFT));}
+            else if(btn==r){f.setLayout(new FlowLayout(RIGHT));}
             f.setVisible(true);
         }
     };
